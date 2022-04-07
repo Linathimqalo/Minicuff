@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="simpleTest.css" />
+        <script src="simpleTest.js" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">STORE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">Mini Bracelets</h1>
+        </header>
+
+        <!--The drop down menu for the policies-->
+        <section>
+            <button class="accordion">Return Policy</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+            <button class="accordion">Shipping Policy</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+            <button class="accordion">Terms and Conditions</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+        </section>
+
+        <!--The reference generation button-->
+        <p><button id="generate">Generate</button></p>
+        <div><span id="output">0</span></div>
+
+        <!--The coupon button and input. Hint: Type "GOLD" or "GOLD20" -->
+        <section>
+            <input type="text" name="text1"> 
+            <input type="button" value="Validate Coupon" name="Submit" 
+            onclick="validate(document.getElementsByName('text1')[0].value)">
+        </section>
+
+        <!--The product list and the add to cart-->
+        <section class="container content-section">
+            <h2 class="section-header">DIAMONDS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" 
+                    src="https://images.unsplash.com/photo-1591209662757-ab76fb411c70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                    <div class="desc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Repellat laudantium autem aperiam sit! Reiciendis ab eos eveniet soluta atque. 
+                        Cumque similique corporis eligendi unde voluptatibus, ut vero ipsam veritatis quo?</p></div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R19020.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" 
+                    src="https://images.unsplash.com/photo-1589128488435-32d61ac6c942?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                    <div class="desc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Repellat laudantium autem aperiam sit! Reiciendis ab eos eveniet soluta atque. 
+                        Cumque similique corporis eligendi unde voluptatibus, ut vero ipsam veritatis quo?</p></div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R5000.00</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" 
+                    src="https://images.unsplash.com/photo-1589674781759-c21c37956a44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                    <div class="desc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Repellat laudantium autem aperiam sit! Reiciendis ab eos eveniet soluta atque. 
+                        Cumque similique corporis eligendi unde voluptatibus, ut vero ipsam veritatis quo?</p></div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R8900.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" 
+                    src="https://images.unsplash.com/photo-1589674574101-bb9ebf36ffc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                    <div class="desc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Repellat laudantium autem aperiam sit! Reiciendis ab eos eveniet soluta atque. 
+                        Cumque similique corporis eligendi unde voluptatibus, ut vero ipsam veritatis quo?</p></div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R6500.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">GEMSTONES</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 5</span>
+                    <img class="shop-item-image" 
+                    src="https://images.unsplash.com/photo-1600119612651-0db31b3a7baa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                    <div class="desc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Repellat laudantium autem aperiam sit! Reiciendis ab eos eveniet soluta atque. 
+                        Cumque similique corporis eligendi unde voluptatibus, ut vero ipsam veritatis quo?</p></div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R12000.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 6</span>
+                    <img class="shop-item-image" 
+                    src="https://images.unsplash.com/photo-1586104237516-5b7075e00d45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                    <div class="desc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Repellat laudantium autem aperiam sit! Reiciendis ab eos eveniet soluta atque. 
+                        Cumque similique corporis eligendi unde voluptatibus, ut vero ipsam veritatis quo?</p></div>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R6000.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--The select menu with the shipping options and price list for them-->
+        <section>
+            <form id="ReviewShippingAndPayment" name="ReviewShippingAndPayment" 
+            method="post" action="/Distributor/Shop/Product-List">
+
+                <select id="shippingmethod" class="selectpicker form-control shipping-method" 
+                name="shippingmethod" aria-label="Shipping Method" tabindex="">
+                                
+                  <!-- Added value="0" here -->
+                  <option value="0" selected="">--Select a Shipping Method--</option>
+                  <option value="0">Collection</option> <!--The values are used as the currency-->
+                  <option value="180">PostNet</option>
+                  <option value="120">Courier</option>
+                  <option value="160">Fedex</option>
+                </select>
+          
+          <table id="product-list">
+            <thead>
+              <tr>
+                <th class="text-left">Item</th>
+                <th class="text-center">Qty.</th>
+                <th class="text-center">Item Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="5" class="pt5"></td>
+              </tr>
+              <tr>
+                <td>Shipping Cost</td>
+                <!-- Added id here -->
+                <td class="qty red" id="shippingqty">0</td>
+                <!-- Added id here -->
+                <td class="item-cost red" id="shippingprice">R0.00</td>
+              </tr>
+            </tbody>
+          </table>
+    </form>
+        </section>
+
+        <!--The selected products will appear here in this section-->
+        <!--The checkout point for the cart. Only visible fully once the items are added-->
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total:</strong>
+                <span class="cart-total-price">R0</span>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">VAT:</strong>
+                <span class="cart-total-vat-price">R0</span>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Shipping Cost:</strong>
+                <span class="cart-total-ship-price" id="grandtotal">R0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        
+        <footer>
+            <div class="footer" id="footer"><!--Footer that is non functional. -->
+                <div class="container-footer">
+                  <div class="row">
+                    <div class="footer-col-1">
+                      <h3>Download Our App</h3>
+                      <p>Download App for Android and iso mobile phone.</p>
+                      <div class="app-logo"><!--Download the app image-->
+                        <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+                        <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+                      </div>
+                    </div>
+              
+                    <div class="footer-col-2">
+                      <img src="https://images.unsplash.com/photo-1638208170417-2464f9699df1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                      <p>
+                        Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                        Sports Accessible to the Many.
+                      </p>
+                    </div>
+              
+                    <div class="footer-col-3">
+                      <h3>Useful Links</h3>
+                      <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                      </ul>
+                    </div>
+              
+                    <div class="footer-col-4">
+                      <h3>Follow us</h3>
+                      <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <hr />
+                  <p class="copyright">Copyright &copy; 2022 - Mini Cuff</p>
+                </div>
+              </div>
+        </footer>
+    </body> <!--NOTE: I am aware the coupon and generate reference don't work, will do my best to fix it
+    but I tried everything I currently know, won't work without messing the entire code. Will revisit in the future. 
+Thank you.-->
+</html>
